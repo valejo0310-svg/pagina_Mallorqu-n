@@ -1,0 +1,269 @@
+body{
+    margin-top: 0%;
+    padding: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    background-color: rgb(254, 254, 206);
+}
+
+.contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgb(66, 152, 78);
+}
+  .contenedor-header ol {
+    display: flex;
+    flex-direction: row;
+    list-style: none; 
+    justify-content:right;
+    align-content: stretch;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+  }
+  .contenedor-header .link{
+    color: #ffffff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .contenedor-header a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .contenedor-header .link img{
+    
+    width: 18px;
+    height: auto;
+    display: block;
+  }
+.contenedor-header #principal{
+    margin: 10px 0;
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+.contenedor-img1 {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contenedor-img1 ul {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    animation: cambio 20s infinite alternate ease;
+}
+
+.contenedor-img1 li {
+    list-style: none;
+    width: 25%;
+    height: 100%;
+}
+
+.contenedor-img1 img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    display: block;
+}
+
+.Texto-superpuesto{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 30px;
+    transition: all 0.4s ease;
+}
+.Texto-superpuesto:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+
+}
+.Texto-superpuesto h1{
+    text-align: center;
+}
+.Texto-superpuesto p{
+    text-align: center;
+}
+@keyframes cambio {
+    0% { margin-left: 0%; }
+    20% { margin-left: 0%; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    70% { margin-left: -200%; }
+
+    75% { margin-left: -300%; }
+    100% { margin-left: -300%; }
+}
+aside {
+    flex: 3;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 201);
+    padding: 10px;
+    gap: 1px;
+    justify-content: flex-start;
+    width: 20%;
+}
+.primer {
+    gap: 100%;
+}
+aside p{
+    margin-left: 5px;
+    margin-right: 0;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    padding: 0;
+    transition: all 0.3s ease;
+    width: 350px;
+}
+aside  p:hover{
+    transform: scale(1.05);
+    
+
+}
+aside .primer h2 {
+    color: rgb(44, 110, 52);
+    margin-left: 75px;
+    font-size: 20px;
+    gap: 0;
+    padding: 0;
+}
+aside h3{
+    color:  rgb(44, 110, 52) ;
+    margin-left: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 6px;
+   
+}
+
+.primer h3 img{
+    width: 18px;
+    height: auto;
+    display: block;
+}
+.primer iframe{
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;;
+    padding: 12px 12px;
+    transition: all 0.3s ease;
+}
+.primer iframe:hover{
+    transform: scale(1.1);
+}
+.imagenes-derecha1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.imagenes-derecha1 img{
+    width: 100%;
+    display: block;
+    
+    object-fit: cover;
+}
+
+.img-superior {
+    height: 400px;
+    margin-top: 5px;
+
+}
+.imagenes-inferiores{
+    display: flex;
+    gap: 12px;
+}
+
+.imagenes-inferiores img{
+    width: 50%;
+    height: 250px;
+}
+#Horarios{
+    color:  rgb(44, 110, 52) ;
+    margin-left: 135px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    gap: 6px;
+}
+main {
+    width: 72%;
+    padding: 0px;
+}
+.segundo {
+    margin-top: 40px;
+    text-align: center;
+}
+aside .segundo p{
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    font-size: 17px;
+    border-radius: 10px;
+    padding: 0;
+    transition: all 0.3s ease;
+    width: 350px;
+}
+aside .segundo p:hover{
+    transform: scale(1.05);
+    
+
+}
+aside .segundo h2 {
+    color: rgb(44, 110, 52);
+    margin-left: -20px;
+    font-size: 20px;
+    gap: 0;
+    padding: 0;
+}
+
+.contenedor-main-aside{
+    display: flex;
+    align-items: flex-start;
+}
+
+.imagenes-derecha2 img{
+    width: 100%;
+    display: block;
+    
+    object-fit: cover;
+}
+
+.img-superior2 {
+    height: 400px;
+    margin-top: 40px;
+
+}
+.imagenes-inferiores2{
+    display: flex;
+    gap: 12px;
+
+}
+
+.imagenes-inferiores2 img{
+    width: 50%;
+    height: 250px;
+    margin-top: 12px;
+}
+.p2{
+    margin-left: 20px;
+}
