@@ -1,0 +1,44 @@
+.imagenes {
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    position: relative;
+}
+
+.imagenes ul {
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+    animation: cambio 10s infinite;
+}
+
+.imagenes li {
+    list-style: none;
+    width: 25%;
+    height: 100%;
+}
+
+.imagenes img {
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes cambio {
+
+    0% { margin-left: 0%; }
+    30% { margin-left: 0%; }
+
+    30% { margin-left: -100%; }
+    50% { margin-left: -100%; }
+
+    50% { margin-left: -200%; }
+    80% { margin-left: -200%; }
+
+    80% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
